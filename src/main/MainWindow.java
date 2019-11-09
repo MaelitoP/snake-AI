@@ -5,17 +5,21 @@ import helpers.KeyboardListener;
 
 import javax.swing.JFrame;
 
-public class MainWindow extends JFrame {
+public class MainWindow extends JFrame
+{
 	/**
-	 * main function of the whole simulation
+	 * Main function of the whole simulation
 	 */
-	public static void main(String[] args) {
+	public static void main(String[] args)
+	{
 		new MainWindow();
 	}
+
 	/**
 	 * Simple JFrame as user interface
 	 */
-	public MainWindow() {
+	public MainWindow()
+	{
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setSize( 1000, 600);
 		setExtendedState(MAXIMIZED_BOTH);
@@ -25,6 +29,4 @@ public class MainWindow extends JFrame {
 		add(new GameLoop(keyb));
 		setVisible(true);
 	}
-
 }
-
